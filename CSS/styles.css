@@ -11462,7 +11462,7 @@ p {
   color: #ffffff;
 }
 .card:hover p {
-  color: #f0f0f0;
+  color: #f3f3f3 !important;
 }
 @media screen and (min-width: 768px) {
   section {
