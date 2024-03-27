@@ -11319,3 +11319,83 @@ section#contact form#contactForm :-ms-input-placeholder {
 .whatsapp-icon img {
   width: 40px;
 }
+
+#logo_slider .title h1 {
+  position: relative;
+}
+
+#logo_slider .title h1::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: -18px;
+  left: 30%;
+}
+
+#logo_slider .title h1::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: -25px;
+  left: 34%;
+} 
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  margin-top: 60px;
+  padding: 0 0 60px 0; 
+  background: var(--white-color);
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 70px;
+  margin: 0 40px;
+}
