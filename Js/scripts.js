@@ -43,3 +43,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+document
+.getElementById("whatsapp-icon")
+.addEventListener("click", function () {
+  var phoneNumber = "+971505403582";
+  var message = "Hello, I have a question!";
+  var whatsappLink =
+    "https://wa.me/" +
+    phoneNumber +
+    "?text=" +
+    encodeURIComponent(message);
+  window.open(whatsappLink, "_blank");
+});
