@@ -9,12 +9,12 @@
       document.documentElement.lang = 'en';
       document.documentElement.setAttribute('dir', 'ltr');
       translateToEnglish();
-      updateLogo('Logo2.png');
+      updateLogo('logo.png');
     } else {
       document.documentElement.lang = 'ar';
       document.documentElement.setAttribute('dir', 'rtl');
       translateToArabic();
-      updateLogo('LOGO2AR.png');
+      updateLogo('logoar.png');
     }
   }
 
