@@ -14,7 +14,7 @@
       document.documentElement.lang = 'ar';
       document.documentElement.setAttribute('dir', 'rtl');
       translateToArabic();
-      updateLogo('Logo2ar.png');
+      updateLogo('LOGO2AR.png');
     }
   }
 
