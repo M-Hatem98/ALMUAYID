@@ -35,75 +35,66 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="#page-top"
-          ><img
-            src="assets/img/Logo2.png"
-            style="width: 150px; height: auto"
-            alt="ALMUAYID"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="#page-top">
+          <img src="assets/img/Logo2.png" style="width: 150px; height: auto" alt="ALMUAYID" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Why We</a>
+              <a id="why-we" class="nav-link" href="#blog">Why We</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a id="services" class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#parteners">Our Parteners</a>
+              <a id="about-us" class="nav-link" href="#about">About US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a id="our-partners" class="nav-link" href="#parteners">Our Parteners</a>
+            </li>
+            <li class="nav-item">
+              <a id="contact" class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
+          <button type="button" class="btn btn-secondary btn-language" onclick="switchLanguage(event)">English</button>
+          <button type="button" class="btn btn-secondary btn-language" onclick="switchLanguage(event)">العربية</button>
         </div>
       </div>
     </nav>
+    
+    
     <!-- Masthead-->
     <header class="masthead">
       <div class="container">
-        <div class="masthead-subheading">
-          Welcome To
-          <span style="color: #21566f; font-weight: bold">ALMUAYID</span>
+        <div class="masthead-subheading" id="welcome">
+          Welcome To <span style="color: #21566f; font-weight: bold" id="almuayid">ALMUAYID</span>
         </div>
-        <div class="masthead-heading text-uppercase" style="color: #ffc80093">
+        <div class="masthead-heading text-uppercase" id="nice-to-meet-you">
           It's Nice To Meet You
         </div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#blog"
-          >Tell Me More</a
-        >
+        <a class="btn btn-primary btn-xl text-uppercase" href="#blog" id="tell-me-more">
+          Tell Me More
+        </a>
       </div>
     </header>
 
     <section class="page-section" id="blog">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">
+          <h2 id="section-heading-how" class="section-heading text-uppercase">
             How to establish your company
           </h2>
-          <h3 class="section-subheading text-muted">
+          <h3 id="section-subheading-how" class="section-subheading text-muted">
             Experts in establishing companies
           </h3>
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <p>
+            <p id="section-content-how">
               Company incorporation is simply the establishment of a business
               entity within the United Arab Emirates. This process includes
               registering the company with Official authorities, obtaining the
@@ -128,12 +119,13 @@
         </div>
       </div>
     </section>
+    
 
     <section class="page-section newservices" id="services">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          <h3 class="section-subheading text-muted">Some of our services</h3>
+          <h2 id="section-heading-services" class="section-heading text-uppercase">Services</h2>
+          <h3 id="section-subheading-service" class="section-subheading text-muted">Some of our services</h3>
         </div>
         <div class="row">
           <div class="column">
@@ -141,8 +133,8 @@
               <div class="icon-wrapper">
                 <i class="fa-solid fa-building"></i>
               </div>
-              <h3>Establishing companies in the Emirates</h3>
-              <p class="text-muted" style="text-align: left;">The UAE has strengthened its positionThe UAE has strengthened its position as one of the best destinations for investors to establish their businesses or branchesFor their companies. It also provided three types of economic zones for companies to establish and develop their businesses there. Each area is granted in them High-quality infrastructure, regulations and laws tailored to meet the diverse requirements of entrepreneurs</p>
+              <h3 id="service1-title">Establishing companies in the Emirates</h3>
+              <p class="text-muted" id="service1-description">The UAE has strengthened its position as one of the best destinations for investors to establish their businesses or branches for their companies. It also provided three types of economic zones for companies to establish and develop their businesses there. Each area is granted in them high-quality infrastructure, regulations and laws tailored to meet the diverse requirements of entrepreneurs.</p>
             </div>
           </div>
           <div class="column">
@@ -150,86 +142,66 @@
               <div class="icon-wrapper">
                 <i class="fa-solid fa-ticket"></i>
               </div>
-              <h3>Visa services and golden residency</h3>
-              <p class="text-muted" style="text-align: left;">Visas enable individuals to enter and reside in the UAE for a specified period of time
-                It also allows them to access various services in the UAE, such as health care, education and employment
-                It ensures that individuals are protected within the laws and regulations applicable in the United Arab Emirates and that they benefit from assistance
-                Legal if necessary mother t</p>
+              <h3 id="service2-title">Visa services and golden residency</h3>
+              <p class="text-muted" id="service2-description">Visas enable individuals to enter and reside in the UAE for a specified period of time. It also allows them to access various services in the UAE, such as health care, education and employment. It ensures that individuals are protected within the laws and regulations applicable in the United Arab Emirates and that they benefit from assistance, legal if necessary mother t.</p>
             </div>
           </div>
           <div class="column">
-              <div class="card">
-                  <div class="icon-wrapper">
-                      <i class="fa-solid fa-money-check-dollar"></i>
-                    </div>
-                    <h3>Opening a bank account for companies</h3>
-                    <p class="text-muted" style="text-align: left;">Opening a Corporate Bank Account To do business in the United States, you need to open a dedicated corporate bank account on
-                        Specifically. Under the law, business owners are prohibited from carrying out commercial activities from their personal accounts. the account
-                        Sari is usually the type that is recommended to open because it is ideal in terms of procedures and large amounts can be transferred through it.</p>
-                    </div>
-                </div>
-                <div class="column">
-                  <div class="card">
-                    <div class="icon-wrapper">
-                      <i class="fa-regular fa-building"></i>
-                    </div>
-                    <h3>Establishing companies in Saudi Arabia</h3>
-                    
-                  </div>
-                </div>
-                <div class="column">
-                    <div class="card">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-money-check-dollar"></i>
+              </div>
+              <h3 id="service3-title">Opening a bank account for companies</h3>
+              <p class="text-muted" id="service3-description">Opening a Corporate Bank Account To do business in the United States, you need to open a dedicated corporate bank account on Specifically. Under the law, business owners are prohibited from carrying out commercial activities from their personal accounts. the account Sari is usually the type that is recommended to open because it is ideal in terms of procedures and large amounts can be transferred through it.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-building"></i>
+              </div>
+              <h3 id="service4-title">Establishing companies in Saudi Arabia</h3>
+              
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
               <div class="icon-wrapper">
                 <i class="fa-regular fa-note-sticky"></i>
               </div>
-              <h3>Clearing government transactions</h3>
+              <h3 id="service5-title">Clearing government transactions</h3>
               
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <section class="page-section pb-0 mb-0" id="about">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">About Us</h2>
-          <h3 class="section-subheading text-muted">Who We Are</h3>
+          <h2 id="section-heading-about" class="section-heading text-uppercase">About Us</h2>
+          <h3 id="section-subheading-about" class="section-subheading text-muted">Who We Are</h3>
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12" style="text-align: center;">
-            <img src="/assets/img/about/about.jpg" alt="" style="width: 70%" />
+            <img src="/assets/img/about.jpg" alt="" style="width: 50%" />
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="col-lg-6 col-md-12 col-sm-12" id="about-text">
             <p>
-              We are proud to be the leader in helping startups build their
-              successful businesses. Establishing a company can be confusing at
-              first, especially when you start in a new country. For this
-              reason, we are here to guide you every step along the way thanks
-              to our experience spanning more than 11 years.We have helped over
-              30,000 entrepreneurs start their businesses in the UAE alone. Our
-              qualified team of consulting specialists can provide assistance at
-              all stages of establishing companies. We understand that every
-              entrepreneur has a unique personality and ambition, so we offer
-              customized solutions to meet your needs. Whether you are looking
-              to start a new company,Or expand your existing business
-              activities, or even if you need some advice, we are here to help.
-              If you are ready to embark on this adventure and realize your
-              practical dreams and turn them into reality, do not hesitate to
-              contact us at ALMUAYID Foundation.
+              We are proud to be the leader in helping startups build their successful businesses. Establishing a company can be confusing at first, especially when you start in a new country. For this reason, we are here to guide you every step along the way thanks to our experience spanning more than 11 years. We have helped over 30,000 entrepreneurs start their businesses in the UAE alone. Our qualified team of consulting specialists can provide assistance at all stages of establishing companies. We understand that every entrepreneur has a unique personality and ambition, so we offer customized solutions to meet your needs. Whether you are looking to start a new company, or expand your existing business activities, or even if you need some advice, we are here to help. If you are ready to embark on this adventure and realize your practical dreams and turn them into reality, do not hesitate to contact us at ALMUAYID Foundation.
             </p>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="mt-0" class="page-section" id="parteners">
+    
+    <section class="page-section pb-0 mb-0" id="logo_slider">
       <div class="container">
-        <section id="logo_slider">
-          <div class="container">
-            <div class="title d-flex justify-content-center mt-5">
-              <h1>Our Partners</h1>
-            </div>
+        <div class="text-center">
+          <h2 id="partners-heading" class="section-heading text-uppercase">Our Parteners</h2>
+        </div>
             <div class="logos">
               <div class="logos-slide">
                 <img src="assets/img/partners/abodabi.png" />
@@ -238,7 +210,7 @@
                 <img src="assets/img/partners/download.png" />
                 <img src="assets/img/partners/DUBAI.jpg" />
                 <img src="assets/img/partners/IFZA.jpg" />
-                <img src="assets/img/partners/logo.svg" />
+                <img src="assets/img/partners/logo.png" />
                 <img src="assets/img/partners/masrfajman.jpg" />
                 <img src="assets/img/partners/nav-logo-ar.png" />
                 <img src="assets/img/partners/Shams.jpg" />
@@ -248,121 +220,52 @@
             </div>
           </div>
         </section>
-      </div>
-    </div>
+    
     <!-- Contact-->
     <section class="page-section" id="contact">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading mb-0 pb-3" style="color: #fff">
-            Do you want to start your own company?
-          </h3>
-          <h3 class="section-subheading text-muted">
-            Then you are in the right place... Book your free consultation with
-            one of our specialized experts to start achieving your dreams and
-            practical successes.
-          </h3>
+          <h2 id="contact-heading" class="section-heading text-uppercase">Contact Us</h2>
+          <h3 id="subheading1" class="section-subheading mb-0 pb-3" style="color: #fff">Do you want to start your own company?</h3>
+          <h3 id="subheading2" class="section-subheading text-muted">Then you are in the right place... Book your free consultation with one of our specialized experts to start achieving your dreams and practical successes.</h3>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <ul style="list-style: none">
               <li>
-                <h2 style="color: #fff">Address :-</h2>
+                <h2 id="address-heading" style="color: #fff">Address :-</h2>
                 <ul style="list-style: none">
-                  <li class="text-light" style="padding: 5px">
-                    Al Makhawi Building
-                  </li>
-                  <li class="text-light" style="padding: 5px">
-                    Oud Metha - Dubai
-                  </li>
-                  <li class="text-light" style="padding: 5px">
-                    United Arab Emirates
-                  </li>
+                  <li id="address-line1" class="text-light" style="padding: 5px">Al Makhawi Building</li>
+                  <li id="address-line2" class="text-light" style="padding: 5px">Oud Metha - Dubai</li>
+                  <li id="address-line3" class="text-light" style="padding: 5px">United Arab Emirates</li>
                 </ul>
               </li>
               <li class="mt-4">
-                <h2 style="color: #fff">Contact :-</h2>
+                <h2 id="contact-info" style="color: #fff">Contact :-</h2>
                 <ul style="list-style: none">
-                  <li class="text-light" style="padding: 5px">
-                    Email :-
-                    <ul style="list-style: none">
-                      <li>
-                        <a
-                          style="text-decoration: none"
-                          href="mailto:info@almuayid.com"
-                          target="_blank"
-                          >info@almuayid.com</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="text-light" style="padding: 5px">
-                    Phone :-
-                    <ul style="list-style: none">
-                      <li>
-                        <a
-                          style="text-decoration: none"
-                          href="tel:+971 50 540 3582"
-                          target="_blank"
-                          >+971 50 540 3582</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="text-light" style="padding: 5px">
-                    Whatsapp :-
-                    <ul style="list-style: none">
-                      <li>
-                        <a
-                          style="text-decoration: none"
-                          href="https://wa.me/+971 50 540 3582?text=Hello%20there!"
-                          target="_blank"
-                          >+971 50 540 3582</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
+                  <li id="email-label" class="text-light" style="padding: 5px">Email :-</li>
+                  <li id="email" class="text-light" style="padding: 5px"><a style="text-decoration: none" href="mailto:info@almuayid.com" target="_blank">info@almuayid.com</a></li>
+                  <li id="phone-label" class="text-light" style="padding: 5px">Phone :-</li>
+                  <li id="phone" class="text-light" style="padding: 5px"><a style="text-decoration: none" href="tel:+971 50 540 3582" target="_blank">+971 50 540 3582</a></li>
+                  <li id="whatsapp-label" class="text-light" style="padding: 5px">Whatsapp :-</li>
+                  <li id="whatsapp" class="text-light" style="padding: 5px"><a style="text-decoration: none" href="https://wa.me/+971 50 540 3582?text=Hello%20there!" target="_blank">+971 50 540 3582</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.8078779809525!2d55.313695856763076!3d25.24339514449804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42d46590d341%3A0x59ca699bcff41b8c!2sAl%20Makhawi%20Building!5e0!3m2!1sar!2seg!4v1711457405113!5m2!1sar!2seg"
-              width="100%"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.8078779809525!2d55.313695856763076!3d25.24339514449804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42d46590d341%3A0x59ca699bcff41b8c!2sAl%20Makhawi%20Building!5e0!3m2!1sar!2seg!4v1711457405113!5m2!1sar!2seg" width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
     </section>
+    
     <!-- Footer-->
     <footer class="footer py-4">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 text-lg-start">
-            Copyright &copy; ALMUAYID 2024
-          </div>
-          <div class="col-lg-4 my-3 my-lg-0">
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="https://www.tiktok.com/@al.muayid.busines?_t=8l1bNYhjXPu&_r=1"
-              aria-label="Tiktok"
-              target="_blank"
-              ><i class="fa-brands fa-tiktok"></i
-            ></a>
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="https://www.instagram.com/almuayid.bc?igsh=ZWZjYTM5Y2x2Y2p0"
-              aria-label="Instagram"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+          <div class="col-lg-12 ">
+            Copyright &copy; <span style="color: #21566f; font-weight: bold">ALMUAYID</span> 2024
           </div>
         </div>
       </div>
@@ -374,6 +277,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <!-- Core theme JS-->
+    <script>
+      document
+.getElementById("whatsapp-icon")
+.addEventListener("click", function () {
+  var phoneNumber = "+971505403582";
+  var message = "Hello, I have a question!";
+  var whatsappLink =
+    "https://wa.me/" +
+    phoneNumber +
+    "?text=" +
+    encodeURIComponent(message);
+  window.open(whatsappLink, "_blank");
+});
+
+
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
+    </script>
     <script src="js/scripts.js"></script>
+    <script src="Js/switchlanguage.js"></script>
+
   </body>
 </html>
