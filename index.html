@@ -48,16 +48,16 @@
               <a id="why-we" class="nav-link" href="#blog">Why We</a>
             </li>
             <li class="nav-item">
-              <a id="services" class="nav-link" href="#services">Services</a>
+              <a id="services" class="nav-link" href="#services-section">Services</a>
             </li>
             <li class="nav-item">
               <a id="about-us" class="nav-link" href="#about">About US</a>
             </li>
             <li class="nav-item">
-              <a id="our-partners" class="nav-link" href="#parteners">Our Parteners</a>
+              <a id="our-partners" class="nav-link" href="#logo_slider">Our Parteners</a>
             </li>
             <li class="nav-item">
-              <a id="contact" class="nav-link" href="#contact">Contact</a>
+              <a id="contact" class="nav-link" href="#contactus">Contact</a>
             </li>
           </ul>
           <button type="button" class="btn btn-warning btn-language text-light m-2 border-0" onclick="switchLanguage(event)">English</button>
@@ -120,7 +120,7 @@
     </section>
     
 
-    <section class="page-section newservices" id="services">
+    <section class="page-section newservices" id="services-section">
       <div class="container">
         <div class="text-center">
           <h2 id="section-heading-services" class="section-heading text-uppercase">Services</h2>
@@ -221,7 +221,7 @@
         </section>
     
     <!-- Contact-->
-    <section class="page-section" id="contact">
+    <section class="page-section" id="contactus">
       <div class="container">
         <div class="text-center">
           <h2 id="contact-heading" class="section-heading text-uppercase">Contact Us</h2>
@@ -269,23 +269,48 @@
         </div>
       </div>
     </footer>
-    <div id="whatsapp-icon" class="whatsapp-icon">
+    <!-- <div id="whatsapp-icon" class="whatsapp-icon">
       <img src="assets/img/whatsapp.png" alt="" />
-    </div>
+    </div> -->
+
+    <!-- HTML code for WhatsApp, Phone, TikTok, and Instagram icons -->
+<div class="contact-icons">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/+971505403582" target="_blank" class="contact-icon whatsapp-icon">
+    <img src="assets/img/whatsapp.png" alt="WhatsApp">
+  </a>
+  <!-- Phone -->
+  <a href="tel:+971505403582" target="_blank" class="contact-icon phone-icon">
+    <img src="assets/img/Phone_icon.png" alt="Phone">
+  </a>
+  <!-- Email -->
+  <a href="mailto:info@almuayid.com" target="_blank" class="contact-icon phone-icon">
+    <img src="assets/img/mail.webp" alt="Phone">
+  </a>
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@al.muayid.busines?_t=8l1bNYhjXPu&_r=1" target="_blank" class="contact-icon tiktok-icon">
+    <img src="assets/img/tiktok-icon-free-png.webp" alt="TikTok">
+  </a>
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/almuayid.bc?igsh=ZWZjYTM5Y2x2Y2p0" target="_blank" class="contact-icon instagram-icon">
+    <img src="assets/img/instgram.png" alt="Instagram">
+  </a>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-      document
-.getElementById("whatsapp-icon")
-.addEventListener("click", function () {
-  var phoneNumber = "+971505403582";
-  var message = "Hello, I have a question!";
-  var whatsappLink =
-    "https://wa.me/" +
-    phoneNumber +
-    "?text=" +
-    encodeURIComponent(message);
-  window.open(whatsappLink, "_blank");
-});
+//       document
+// .getElementById("whatsapp-icon")
+// .addEventListener("click", function () {
+//   var phoneNumber = "+971505403582";
+//   var message = "Hello, I have a question!";
+//   var whatsappLink =
+//     "https://wa.me/" +
+//     phoneNumber +
+//     "?text=" +
+//     encodeURIComponent(message);
+//   window.open(whatsappLink, "_blank");
+// });
 
 
 var copy = document.querySelector(".logos-slide").cloneNode(true);
